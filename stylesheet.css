@@ -1,0 +1,64 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html, body {
+	height: 100%;
+}
+ul {
+	padding-left: 20px;
+}
+h1 {
+	text-align: center;
+}
+td {
+	border: 1px solid black;
+}
+p {
+	text-indent: 2em;
+}
+#wraper {
+	;
+}
+#header,#footer {
+	clear: both;
+	color: white;
+}
+#header h1 {
+	text-align: center;
+}
+#footer {
+	height: 20px;
+}
+#container {
+	;
+}
+#sidebar {
+	float: left;
+	width: 20%;
+	color: white;
+	height: 100%;
+	font-size: 20px;
+}
+#sidebar a:hover {
+	color: red;
+}
+#content-main {
+	margin-left: 20%;
+	height: 100%;
+}
+#content-main #home,#research,#cv,#contact,#future,#ps {
+	width: 100%;
+	height: 100%;
+}
+#content-main #cv,#research,#contact,#future,#ps {
+	display: none;
+}
+#footer {
+	clear: both;
+}
+h1 { font-size:35px; font-family: 'Crimson Text', "Times New Roman", Times, serif; color: #565245; font-weight: 400  }
+h2 { font-size:22px; font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif; text-transform: uppercase; color: #820000; letter-spacing: 1px; font-weight: 400; }
+h3 { font-size:15px; font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif; font-weight: 400; }
+h4 { font-size:13px; font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif; font-weight: 400; }
+h5 { font-size:12px; font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif; font-weight: 400; }
