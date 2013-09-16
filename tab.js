@@ -5,6 +5,7 @@ var closeall = function() {
 	$("#contact").hide();
 	$("#ps").hide();
 	$("#future").hide();
+	$("#scholar").hide();
 }
 $(document).ready(function(){
 		$(".hometab").click(function(){
@@ -31,5 +32,9 @@ $(document).ready(function(){
 		$(".futuretab").click(function() {
 			closeall();
 			$("#future").toggle();
+		})
+		$(".scholartab").click(function() {
+			closeall();
+			$("#scholar").toggle();
 		})
 		})

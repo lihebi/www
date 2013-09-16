@@ -16,6 +16,7 @@
 					<p><a class="cvtab" href="javascript::">CV</a></p>
 					<p><a class="pstab" href="javascript::">PS</a></p>
 					<p><a class="researchtab" href="javascript::">Research</a></p>
+					<p><a class="scholartab" href="javascript::">Scholastic Record</a></p>
 					<p><a class="futuretab" href="javascript::">Future Plan</a></p>
 					<p><a class="contacttab" href="javascript::">Contact</a></p>
 				</div>
@@ -25,22 +26,66 @@
 						<p>I'm Hebi Li, Welcome to my personal website!</p>
 						<p>I'm currently a 4th year undergraduate student majoring in <a href="http://en.sist.ustc.edu.cn">School of Information Science and Technology</a> in <a href="http://en.ustc.edu.cn">University of Science and Technology of China(USTC)</a></p>
 						<p>I am applying for admission of Master or Phd degree in 2014 fall semester. Please feel free to contact me if you want to know more about me and my research.</p>
+						
+						
+						<div id="news" style="padding-top: 100px">
+							<h2>News</h2>
+							<ul>
+								<li>[9.18.2013] Upload <a href="">a video to introduce myself</a> on Youtube.</li>
+								<li>[9.12,2013] Put some of my program onto <a href="github.com/lihebi">GitHub.com/lihebi</a></li>
+								<li>[8.28.2013] Generally finished algorithm and coding for face recognition, Use l1minimization and Adaboost to train. However the result is not so good</li>
+								<li>[8.13,2013] Start the program LOW-RESOLUTION FACE RECOGNITION VIA SPARSE REPRESENTATION OF PATCHES.</li>
+								<li>[6.9.2013] Crawled more than 5GB meta data of 300 milion different movies from movie.douban.com</li>
+								<li>[6.1.2013] Finished Spider code both in Jave and Python.</li>
+							</ul>
+						</div>
 					</div>
 					<div id="research">
-						<h2>Low-Resolution Face Recognition via Sparse Representation of Patches</h2>
+						<h2>Low-Resolution Face Recognition via Sparse Representation of Patches(2013)</h2>
+						<p><a href="github.com/lihebi/">Repository on GitHub</a></p>
+						<h3>Overview</h3>
+						<p>Extract patches with different size from face images,  calculate the feature(LBP for example), Than use l1minimization to solve the convex optimization problom and generate</p>
+						<p>Extract many patches with different sizes from face images, and use these patches to calculate feature, and finally use Adaboost to get a strong classifier</p>
+						<h3>Algorithm</h3>
+						<ol>
+							<li>Extract patches from face images</li>
+							<li>For each patch, calculate feature(LBP for example)</li>
+							<li>Use l1minimization to solve the convex optimization problem and get weak classifier</li>
+							<li>Use Adaboost to generate strong classifier from topN weak ones</li>
+							<li>Use Strong classifier to experiments on the test set on YaleB</li>
+						</ol>
+						<h3>Result</h3>
+						<br/><hr/><br/>
+						<h2>Movie data crawling and analyzing(2013)</h2>
+						<p><a href="github.com/lihebi/">Repository on GitHub</a></p>
+						<h3>Overview</h3>
+						<br/><hr/><br/>
+						<h2>Robo Game(2012)</h2>
+						<p><a href="github.com/lihebi/">Repository on GitHub</a></p>
+						<h3>Overview</h3>
+						<p>Our tast is to build a Robot to complete a series of work.</p>
+						<h3>Robot's tasks</h3>
+						<ol>
+							<li>go downstairs</li>
+							<li>fetch a bunch of flowers</li>
+							<li>follow 5 pillars with different sequence of RGB colors in order.</li>
+							<li>go upstairs</li>
+							<li>go to the statue of one of the most famous professors of my school and put down the flowers.</li>
+						</ol>
+						<br/><hr/><br/>
+						<h2>The Freescale Cup Intelligent Car Racing(2011)</h2>
+						<p><a href="github.com/lihebi/">Repository on GitHub</a></p>
+						<p>The competition's <a href="http://www.smartcar.au.tsinghua.edu.cn/">official page</a></p>
+						<h3>Overview</h3>
+						<p>Build a self-balancing car which use only 2 wheels to work, and complete the racing.</p>
+						<h3>Sensors</h3>
 						<ul>
-							<li>xxx</li>
-							<li>xxx</li>
+							<li>Gyroscopes(ENC03B)</li>
+							<li>acceler</li>
 						</ul>
-						<h2>Movie data crawling and analyzing</h2>
+						<h3>Chips</h3>
 						<ul>
-							<li>xxx</li>
-							<li>xxx</li>
-						</ul>
-						<h2>Robo Game</h2>
-						<ul>
-							<li>xxx</li>
-							<li>xxx</li>
+							<li>freescale K60(32 bits)</li>
 						</ul>
 					</div>
 					<div id="cv">
@@ -60,11 +105,9 @@
 						<h2>GPA</h2>
 						<ul>
 							<li>OverAll:</li>
-							<p>GPA: 3.48; Weighted Score: </p>
+							<p>GPA: 3.48/4.3; Weighted Score: Rank: 30/92</p>
 							<li>Computer Based:</li>
-							<p>GPA: 3.82; Weighted Score: </p>
-							<li>GPA calculation Standard:</li>
-							<p>A, 4.3, 100~95, B, 4.0, 94~90, C, 3.7, 89~85,D, 3.3, 84~82; etc.</p>
+							<p>GPA: 3.82/4.3; Weighted Score: </p>
 						</ul>
 						<hr/>
 						<h2>GRE & TOEFL</h2>
@@ -101,22 +144,23 @@
 							</table>
 						</ul>
 						<hr/>
-						<h2>Abilities</h2>
+						<h2>Abilities & Skills</h2>
 							<h3>Programming Languages</h3>
-							<p>General: C/C++, python, Java</p>
-							<p>Scripts: Matlab, Javascript, bash shell</p>
-							<p>Web: html, css, php</p>
-							<p>Other: BASM</p>
+								<p>General: C/C++, python, Java</p>
+								<p>Scripts: Matlab, Javascript, bash shell</p>
+								<p>Web: html, css, php</p>
+								<p>Other: BASM</p>
 							<h3>Libraries</h3>
-							<p>C++: OpenCV</p>
-							<p>Python: Numpy, Scipy, cvxopt</p>
-							<p>Javascript: JQuery</p>
+								<p>C++: OpenCV</p>
+								<p>Python: Numpy, Scipy, cvxopt, wxPython</p>
+								<p>Javascript: JQuery</p>
 							<h3>Alogrims</h3>
-							<p>l1minimization</p>
-							<p>Adaboost</p>
+								<p>l1minimization</p>
+								<p>Adaboost</p>
 							<h3>Operation System</h3>
-							<p>Linux: archlinux, gentoo</p>
-							<p>Windows</p>
+								<p>Linux: archlinux, gentoo</p>
+								<p>Windows</p>
+								<p>System On-Chip: Freescale XS128, K60</p>
 						<h2>Interests</h2>
 						<ul>
 							<li>Computer Vision</li>
@@ -127,15 +171,16 @@
 						<hr/>
 						<h2>Researches</h2>
 						<ul>
-							<li>Low-Resolution Face Recognition via Sparse Representation of Patches</li>
-							<li>Movie data crawling and analyzing</li>
-							<li>Robo Game based on Image Process</li>
-							<li>Freescale Smart Car Competition</li>
+							<li>Low-Resolution Face Recognition via Sparse Representation of Patches(2013)</li>
+							<li>Movie data crawling and analyzing(2013)</li>
+							<li>Robo Game based on Image Process(2012)</li>
+							<li>Freescale Smart Car Competition(2011)</li>
 						</ul>
 						<hr/>
 						<h2>Awards</h2>
 						<ul>
-							<li></li>
+							<li>Third in Robo Game Competition, USTC(2012)</li>
+							<li>National Encouragement scholarship(2012)</li>
 						</ul>
 						<hr/>
 						<h2>Contact</h2>
@@ -147,6 +192,54 @@
 					<div id="ps">
 						<h2>Personal Statement</h2>
 						<p>You can download my Personal Statement in <a href="ps.pdf">PDF Format</a></p>
+						<br/><hr/></br>
+						<p></p>
+					</div>
+					<div id="scholar">
+						
+						<h2>GPA Calculation</h2>
+						<table>
+							<tr>
+								<td>Centesimal Grade</td>
+								<td>100~95</td><td>94~90</td>
+							</tr>
+							<tr>
+								<td>Letter Grade</td>
+								<td>A+</td><td>A</td>
+							</tr>
+							<tr>
+								<td>Point Value</td>
+								<td>4.3</td><td>4</td>
+							</tr>
+						</table>
+						<h2>Scholastic Record of All my Curriculum</h2>
+						<p>You can find the original scan of it <a href="scholar.jpg">here</a>.
+						<table>
+							<thead>
+								<th>Course Title</th>
+								<th>Grade</th>
+								<th>Hrs.</th>
+								<th>Cr.</th>
+							</thead>
+							<tbody>
+								<tr><td>Linear Algebra B1</td><td>85</td><td>80</td><td>4</td></tr>
+								<tr><td>Linear Algebra B1</td><td>85</td><td>80</td><td>4</td></tr>
+								<tr><td>Linear Algebra B1</td><td>85</td><td>80</td><td>4</td></tr>
+								<tr><td>Linear Algebra B1</td><td>85</td><td>80</td><td>4</td></tr>
+								<tr><td>Linear Algebra B1</td><td>85</td><td>80</td><td>4</td></tr>
+								<tr><td>Linear Algebra B1</td><td>85</td><td>80</td><td>4</td></tr>
+								<tr><td>Linear Algebra B1</td><td>85</td><td>80</td><td>4</td></tr>
+								<tr><td>Linear Algebra B1</td><td>85</td><td>80</td><td>4</td></tr>
+								<tr><td>Linear Algebra B1</td><td>85</td><td>80</td><td>4</td></tr>
+								<tr><td>Linear Algebra B1</td><td>85</td><td>80</td><td>4</td></tr>
+								<tr><td>Linear Algebra B1</td><td>85</td><td>80</td><td>4</td></tr>
+								<tr><td>Linear Algebra B1</td><td>85</td><td>80</td><td>4</td></tr>
+								<tr><td>Linear Algebra B1</td><td>85</td><td>80</td><td>4</td></tr>
+								<tr><td>Linear Algebra B1</td><td>85</td><td>80</td><td>4</td></tr>
+								<tr><td>Linear Algebra B1</td><td>85</td><td>80</td><td>4</td></tr>
+							</tbdody>
+						</table>
+						
 					</div>
 					<div id="future">
 						<h2>Future Plans</h2>
