@@ -14,11 +14,24 @@ ol {
 h1 {
 	text-align: center;
 }
-td {
+table {
 	border: 1px solid black;
+}
+th {
+	background-color: #999999;
+}
+td {
+	/*border: 1px solid black;*/
+	background-color: #cccccc;
+	padding: 0;
+	margin: 0;
 }
 p {
 	text-indent: 2em;
+}
+.CS td, .EE td{
+	background-color: white;
+	color: green;
 }
 #wraper {
 	;
