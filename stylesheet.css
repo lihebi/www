@@ -41,6 +41,9 @@ span {
 .Math td{
     color: #663300;
 }
+#WEAK, #WEAK2 {
+    color: red;
+}
 #wraper {
 	;
 }

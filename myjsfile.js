@@ -59,6 +59,7 @@ var calGPA = function() {
     sum43=0;
     sum4 = 0;
     count=0;
+    sumgrade=0;
     for(i=0;i<a.length;i++){
         if(a.eq(i).find('input').prop('checked')){
             tmp = a.eq(i).children().eq(1).html();
@@ -68,13 +69,24 @@ var calGPA = function() {
             credit = a.eq(i).children().eq(3).html();
             sum43 += point43*credit;
             sum4 += point4*credit;
+            if(tmp=='A'||tmp=='A-'||tmp=='B+'||tmp=='B'||tmp=='Pass'||tmp=='quit'){
+                ;
+            }
+            else{
+                sumgrade += parseFloat(tmp)*credit;
+                alert(sumgrade);
+                alert(tmp);
+            }
             count += parseFloat(credit);
         }
     }
     gpa43 = sum43/count;
     gpa4 = sum4/count;
+    avergrade = sumgrade/count;
+    $("#CREDITCOUNT").text('Total Credit: '+count.toPrecision(3));
     $("#GPA43").text('GPA: '+gpa43.toPrecision(3)+'/4.3');
     $("#GPA4").text('GPA: '+gpa4.toPrecision(3)+'/4.0');
+    $("#AVERGRADE").text('Average Grade: '+avergrade.toPrecision(3)+'/100');
 }
 var addCheckBox = function() {
     a = $("#data tr");
